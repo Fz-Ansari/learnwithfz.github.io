@@ -1,0 +1,122 @@
+:root{
+	--blue:#2980b9;
+	--light-blue: #ecf4f9;
+	--border: .1rem solid rgba(0,0,0,.1);
+}
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: normal;
+	font-family: verdana,Geneva,Tahoma,sans-serif;
+}
+html{
+	font-size: 62.5%;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	padding-bottom: 7rem;
+	background: #f0f3f5;
+	min-height: 100vh;
+}
+
+.container form{
+width: 60rem;
+box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .1);
+border-radius: .5rem;
+overflow: hidden;
+text-align: center;
+}
+.container form .links{
+	background: #fff;
+	padding: 3rem 1.5rem;
+
+}
+.container form .title{
+	font-size: 1.7rem;
+	padding-bottom: 1.5rem;
+	color: #666;
+}
+
+.container form .links .buttons .btn{
+	font-size: 1.7rem;
+	margin: .5rem;
+	display: inline-block;
+	background: var(--light-blue);
+border: var(--border);
+border-radius: .5rem;
+padding: 1rem 3rem;
+color: #333;
+
+}
+.container form .links .buttons .btn i{
+	padding-right: .5rem;
+}
+.container form .links .buttons .btn:hover{
+	color: #fff;
+	background: var(--blue);
+
+}
+
+.container form .input-box{
+	padding: 3rem;
+	background: var(--light-blue);
+
+}
+
+.container form .input-box .input{
+	/*padding: 3rem;*/
+	margin: 1.5rem auto;
+	display: flex;
+	height: 5rem;
+	width: 100%;
+	border-radius: .5rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	border: var(--border);
+
+}
+
+
+
+.container form .input-box .input input{
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.6rem;
+	color: #333;
+	text-transform: none;
+}
+.container form .input-box .input span{
+	color: #999;
+	/*padding-right: .5rem;*/
+	/*padding-left:1.5rem ;*/
+	padding-top: 1.5rem;
+	padding-left: 2rem;
+	font-size: 2rem;
+}
+/**/
+.container form .input-box .checkbox{
+text-align: left;
+font-size: 1.5rem;
+}
+
+.container form .input-box .sign{
+	font-size: 1.7rem;
+	background: var(--blue);
+	padding: .5rem 1rem;
+	color: #fff;
+	border: var(--border);
+	border-radius: .5rem;
+}
+
+.container form .input-box .sign:hover{
+	letter-spacing: .1rem;
+}
