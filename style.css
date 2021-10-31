@@ -394,7 +394,7 @@ nav a{
 	margin: .2rem .4rem;
 }
 nav a:hover{
-	background: lightgreen;
+	background: crimson;
 	border-radius: 1rem;
 }
 .navbar{
