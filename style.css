@@ -8,10 +8,11 @@
 	text-transform: capitalize;
 	font-family:cursive,verdana;
 	word-spacing:0;
-
+scroll-behavior: smooth;
 }
 html{
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 /*star header style*/
 header{
