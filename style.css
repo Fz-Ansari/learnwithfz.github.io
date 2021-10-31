@@ -44,7 +44,7 @@ header img{
 }
 .navbar{
 	position: fixed;
-	top: 1.5rem;
+	top: 2.5rem;
 	right: 2.5rem;
 	font-size:4rem;
 	color: #fff;
@@ -67,6 +67,8 @@ header img{
 /*start nav style*/
 
 nav{
+	position: sticky;
+	top: 0rem;
 	background: #333;
 	padding: .5rem 1rem;
 }
@@ -75,6 +77,12 @@ nav a{
 	font-weight: 666;
 	font-size: 3rem;
 	margin: .3rem 2rem;
+}
+nav a:hover{
+	letter-spacing: .1rem;
+	color:lightgreen ;
+	/*background: rosybrown;*/
+	text-shadow: .2rem .2rem .5rem lightgreen;
 }
 /*end nav style*/
 
@@ -364,8 +372,13 @@ nav{
 
 }
 .show{
-	 transform: translateY(0%);
-    padding: 1rem 1rem;
+	 /*transform: translateY(0%);*/
+      padding: 1rem 1rem;
+    top: 0;
+transform: translateX(0%);
+    width: 100%;
+    min-height: 200vh;
+    position: fixed;
     display: block;
 }
 nav a{
@@ -374,22 +387,26 @@ nav a{
 	font-weight: 666;
 	font-size: 2.2rem;
 	display: block;
-	border-radius: 1rem;
+	border-bottom: .2rem solid red;
+
 	padding:1rem 1.2rem;
 	margin: .2rem .4rem;
 }
 nav a:hover{
 	background: lightgreen;
+	border-radius: 1rem;
 }
 .navbar{
 	display: block;
+	z-index: 1111;
 }
 
 main section h2{
 	font-size: 3rem;
 }
 main section iframe{
-	width: 49%;
+	width: 99%;
+	/*margin:5%;*/
 	height: 23rem;
 
 }

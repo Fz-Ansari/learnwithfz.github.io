@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!--start header section -->
-	<header>
+	<header id="header">
 		<h1>learn with fz.<br>
 		<span>aim to become a billionaire</span>
 		
@@ -28,18 +28,18 @@
 	<!-- start nav section -->
 
 	<nav id="bar">
-		<a  href="#">home</a>
-		<a  href="#">BCA videos</a>
-		<a  href="#">popular videos</a>
-		<a  href="#">study materials</a>
-		<a  href="#">login</a>
+		<a onclick="work()"  href="#header">home</a>
+		<a onclick="work()" href="#bca_videos">BCA videos</a>
+		<a onclick="work()"  href="#p_videos">popular videos</a>
+		<a onclick="work()" href="#study_material">study materials</a>
+		<a onclick="work()" href="#">login</a>
 	</nav>
 	<!-- end nav section -->
 
 	<!-- start main section -->
 	<main>
 		<!-- start BCA videos section -->
-		<section>
+		<section id="bca_videos">
 			<h2>BCA videos</h2>
 			<iframe   src="https://www.youtube.com/embed/bKg9CbMfJQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<iframe src="https://www.youtube.com/embed/yYGZjkAOezQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,7 +50,7 @@
 		</section>
 		<!-- end BCA videos section -->
 		<!-- start popular videos section -->
-		<section>
+		<section id="p_videos">
 			<h2>popular videos</h2>
 			<iframe  src="https://www.youtube.com/embed/F6uo98pX44U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<iframe src="https://www.youtube.com/embed/-UOyThfMxHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,7 +59,7 @@
       <!-- end popular videos section -->
       <!-- start study materials section -->
 
-		<section class="study-sec">
+		<section id="study_material" class="study-sec">
 			<h2>study material</h2>
 			<a target="_blank" href="js.pdf"><img class="study" src="download.jpeg"></a>
 			<a target="_blank" href="php.pdf"><img class="study" src="download.png"></a>
@@ -137,6 +137,10 @@
 nav.classList.toggle('fa-times');
 navbar.classList.toggle('show');
 
+	}
+	function work(){
+		nav.classList.toggle('fa-times');
+navbar.classList.toggle('show');
 	}
 	
 </script>
