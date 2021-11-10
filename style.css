@@ -9,6 +9,7 @@
 	font-family:cursive,verdana;
 	word-spacing:0;
 scroll-behavior: smooth;
+/*transition: .3s all;*/
 }
 html{
 	font-size: 62.5%;
@@ -43,6 +44,7 @@ header img{
 
 	/*height: 40rem;*/
 }
+
 .navbar{
 	position: fixed;
 	top: 2.5rem;
@@ -72,12 +74,14 @@ nav{
 	top: 0rem;
 	background: #333;
 	padding: .5rem 1rem;
+	transition: all .3s;
 }
 nav a{
 	color: #fff;
 	font-weight: 666;
 	font-size: 3rem;
 	margin: .3rem 2rem;
+	transition: all .3s ;
 }
 nav a:hover{
 	letter-spacing: .1rem;
